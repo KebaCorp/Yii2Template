@@ -6,6 +6,7 @@ return [
     'username' => env('MYSQL_ROOT_USERNAME'),
     'password' => env('MYSQL_ROOT_PASSWORD'),
     'charset' => env('MYSQL_ROOT_CHARSET'),
+    'collation' => env('MYSQL_ROOT_COLLATION'),
 
     // Schema cache options (for production environment)
     //'enableSchemaCache' => true,
