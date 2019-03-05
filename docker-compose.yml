@@ -16,7 +16,7 @@ services:
     image: mysql:8.0
     restart: ${MYSQL_RESTART}
     volumes:
-      - ./docker/databases/mysql:/var/lib/mysql
+      - ${MYSQL_PATH}:/var/lib/mysql
     ports:
       - ${MYSQL_PORT}:3306
     environment:
@@ -30,7 +30,7 @@ services:
     ports:
       - ${MONGO_DB_PORT}:27017
     volumes:
-      - ./docker/databases/mongodb:/data/db
+      - ${MONGO_PATH}:/data/db
 
   mongo-express:
     image: mongo-express
