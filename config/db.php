@@ -5,8 +5,7 @@ return [
     'dsn' => 'mysql:host=' . env('MYSQL_HOST') . ';dbname=' . env('MYSQL_DATABASE'),
     'username' => env('MYSQL_ROOT_USERNAME'),
     'password' => env('MYSQL_ROOT_PASSWORD'),
-    'charset' => env('MYSQL_ROOT_CHARSET'),
-    'collation' => env('MYSQL_ROOT_COLLATION'),
+    'charset' => env('MYSQL_DATABASE_CHARSET'),
 
     // Schema cache options (for production environment)
     //'enableSchemaCache' => true,
